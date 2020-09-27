@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imag_guidbg"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="欢迎使用~"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_textframe" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="感谢使用 大豆农情信息管理系统 \n请务必牢记默认管理员账户密码 \n      初始用户名：admin   \n      初始的密码：admin   \n本软件的初衷是服务三农，若在软件使用的过程中若发现了设计问题，欢迎您提出宝贵意见与建议，最后祝愿您生活愉快，幸福美满，五谷丰登，财源广进！\n\n"
+            android:textSize="20sp"
+            android:textColor="#E6001145" />
+    </ScrollView>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_1"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anbtn"
+        android:text="进入登陆页"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>
+</ScrollView>

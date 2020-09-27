@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="株高"
+            android:textColor="@color/simpleBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="生育期"
+            android:textColor="@color/simpleBlack"
+            android:textSize="18sp" />
+
+        <TextView
+        android:id="@+id/user"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="登录名"
+        android:textColor="@color/simpleBlack"
+        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="@color/simpleBlack"
+            android:text="日期"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/ps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="clip_horizontal"
+        android:singleLine="true"
+        android:text="附加信息"
+        android:textSize="14sp" />
+</LinearLayout>
+
+
+</LinearLayout>

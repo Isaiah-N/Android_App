@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7sp"
+            android:gravity="center_horizontal"
+            android:text="数据登记"
+            android:textColor="#82B1FF"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#8C9EFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=" 大豆的株高："
+                android:textColor="@color/littleBlack"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/soyhigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:hint=" 单位 厘米"
+                android:textColor="@color/littleBlack"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=" 大豆生育期："
+                android:textColor="@color/littleBlack"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/soyage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:hint=" 单位 天"
+                android:textColor="@color/littleBlack"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=" 备注："
+                android:textColor="@color/littleBlack"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:hint="附加信息 可不填"
+                android:textColor="@color/littleBlack"
+                android:singleLine="false"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/pic"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/anbtn"
+                android:layout_centerVertical="true"
+                android:text="拍照"
+                android:textColor="#EDF5F4FF"
+                android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="312dp"
+            android:layout_height="416dp"
+            android:src="@drawable/imag_camera"
+            android:layout_margin="5dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/uid"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="当前登录用户与日期"
+                android:textColor="#B4000000"
+
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/fresh"
+                android:layout_width="47dp"
+                android:layout_height="22dp"
+                android:layout_toRightOf="@id/uid"
+                android:background="@drawable/bg_btn"
+                android:text="刷新"
+                android:textColor="#EDF5F4FF" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="2dp"
+            android:text="当前位置　北纬: 39.9096045\n　　　　　东经: 116.3972282"
+            android:textColor="#B4000000"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_btn"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#EDF5F4FF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_btnred"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#EDF5F4FF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,2 @@
+rootProject.name='大豆农情'
+include ':app'

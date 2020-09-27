@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab_container"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_textframe"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/rdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/littleBlack"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="日      期" />
+
+    <TextView
+        android:id="@+id/rps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/littleBlack"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="备注信息" />
+
+    <TextView
+        android:id="@+id/rloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/littleBlack"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="位置信息" />
+
+    <ImageView
+        android:id="@+id/rpic"
+        android:layout_width="225dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_wujiedu"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btnred"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#EDF5F4FF"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
